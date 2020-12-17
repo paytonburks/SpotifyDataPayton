@@ -29,6 +29,7 @@ def rm_pod(df):
 
 
 def artist_bar_chart(data, filename, title):
+    plt.ioff()
     plt.figure(figsize=(15, 10))
     x_ser = data['Artist']
     y_ser = data['Hours Listened']
@@ -40,7 +41,10 @@ def artist_bar_chart(data, filename, title):
     plt.xticks(rotation=45, horizontalalignment='right')
     plt.xlabel("Artists")
     plt.ylabel("Hours Listened")
+    if filename == "1-10":
+        plt.show()
     plt.savefig("Figures/Artists x Hours Listened (Bar Graphs)/"+filename)
+    plt.close()
     
 def create_artist_x_hours_df(artist_perArtist, totalHours_perArtist):
     artist_x_hours_df = pd.DataFrame()
