@@ -1,5 +1,4 @@
-# CPSC 222 Final
-## Payton's Spotify Data
+# Payton's Spotify Data
 
 ### Project organization
 This project uses TechnicalReport.ipynb as the main source of content; utils.py assists in code for the notebook. The .csv files are also displayed to show raw data input as well as the cleaned data.
